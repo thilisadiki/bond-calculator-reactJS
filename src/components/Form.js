@@ -42,24 +42,22 @@ function Form() {
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <FormInputGroup
-        text="Home Value "
-        icon={<FaDollarSign />}
+        text="Home Value R "
         placeholder={"Enter the value of the home"}
         value={homeValue}
         onInput={(e) => setHomeValue(e.target.value)}
         onkeyup={calculateLoanAmount}
       />
       <FormInputGroup
-        text="Down payment"
-        icon={<FaDollarSign />}
+        text="Down paymen R "
+        
         placeholder={"Enter your funds"}
         value={downPayment}
         onInput={(e) => setDownPayment(e.target.value)}
         onkeyup={calculateLoanAmount}
       />
       <FormInputGroup
-        text="Loan amount"
-        icon={<FaDollarSign />}
+        text="Loan amount R"
         placeholder={"Enter your funds"}
         readOnly={true}
         value={loanAmount}
@@ -72,12 +70,12 @@ function Form() {
       />
       <FormInputGroup
         text="Loan Duration (years)"
-        placeholder={"Enter the duration of your loan in years"}
+        placeholder={"Enter the duration of your loan"}
         value={loanDuration}
         onInput={(e) => setLoanDuration(e.target.value)}
       />
       <h4 className="alert alert-info fw-bold">
-        Monthly payment: <FaDollarSign />
+        Monthly payment:R 
         {parseFloat(monthlyPayment.toFixed(2))}
       </h4>
 
