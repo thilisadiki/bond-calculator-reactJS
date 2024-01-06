@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaDollarSign } from "react-icons/fa";
 import FormInputGroup from "./FormInputGroup";
 
 function Form() {
@@ -50,7 +49,6 @@ function Form() {
       />
       <FormInputGroup
         text="Down paymen R "
-        
         placeholder={"Enter your funds"}
         value={downPayment}
         onInput={(e) => setDownPayment(e.target.value)}
@@ -75,7 +73,7 @@ function Form() {
         onInput={(e) => setLoanDuration(e.target.value)}
       />
       <h4 className="alert alert-info fw-bold">
-        Monthly payment:R 
+        Monthly payment: R 
         {parseFloat(monthlyPayment.toFixed(2))}
       </h4>
 
