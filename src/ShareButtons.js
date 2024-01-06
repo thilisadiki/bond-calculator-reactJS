@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { FacebookShareButton, TwitterShareButton, LinkedinShareButton, LinkedinIcon, FacebookIcon, TwitterIcon } from 'react-share';
+import { FacebookShareButton, TwitterShareButton, LinkedinShareButton, LinkedinIcon, FacebookIcon, TwitterIcon, WhatsappIcon, WhatsappShareButton } from 'react-share';
 
 
 const ShareButtons = ({ url, title, description }) => {
@@ -20,6 +20,12 @@ const ShareButtons = ({ url, title, description }) => {
       url={url} title={title} summary={description}>
        <LinkedinIcon /> 
       </LinkedinShareButton>
+
+      <WhatsappShareButton
+      url={url} title={title}>
+         <WhatsappIcon/>
+      </WhatsappShareButton>
+
     </div>
   );
 };
