@@ -4,6 +4,8 @@ import React from 'react';
 import { FcHome } from 'react-icons/fc';
 import Form from './components/Form';
 import ShareButtons from './ShareButtons';
+import Footer from './components/Footer';
+
 
 function App() {
   const shareUrl = 'https://example.com'; // Replace with your actual URL
@@ -22,7 +24,11 @@ function App() {
         title={shareTitle}
         description={shareDescription}
       />
+            
+       <Footer />
     </div>
+ 
+   
   );
 }
 
